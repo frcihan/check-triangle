@@ -4,15 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Check Triangle</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
-    <input type="number" id="side1" value="3"><br>
-    <input type="number" id="side2" value="4"><br>
-    <input type="number" id="side3" value="5"><br>
+<div class="container">
+    <div class="side">
+        <label for="side1">Side 1:</label><br>
+        <input type="number" id="side1" value="3"><br>
+    </div>
+    <div class="side">
+        <label for="side2">Side 2:</label><br>
+        <input type="number" id="side2" value="4"><br>
+    </div>
+    <div class="side">
+        <label for="side3">Side 3:</label><br>
+        <input type="number" id="side3" value="5"><br>
+    </div>
     <button type="submit" id="button" onclick="getTriangleType()">Check Triangle Type</button>
-
     <p id="result" st></p>
+</div>
+
     
     <script>
         function getTriangleType() {
