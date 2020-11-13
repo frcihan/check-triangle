@@ -24,19 +24,25 @@ input, label, button, p {
     border-radius: 10px;
 }
 
+input {
+    width: 8vw;
+    text-align: center;
+}
+
 label {
     color: #fff;
 }
 
 button {
-    width: 20vw;
+    width: 15vw;
     background-color: #A60022;
     color: #fff;
     margin: 20px;
+    outline: none;
 }
 
 .container {
-    width: 50vw;
+    width: 40vw;
     height: 50vh;
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
@@ -51,12 +57,12 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    width: 30vw;
+    width: 20vw;
     padding: 0 30px;
 }
 
 #result {
-    width: 20vw;
+    width: 15vw;
     text-align: center;
     background-color: #B6CDD3;
     color: #A60022;
