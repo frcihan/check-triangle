@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("./bg-triangle.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+input, label, button, p {
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+label {
+    color: #fff;
+}
+
+button {
+    width: 20vw;
+    background-color: #A60022;
+    color: #fff;
+    margin: 20px;
+}
+
+.container {
+    width: 50vw;
+    height: 50vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 100px;
+}
+
+.side {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30vw;
+    padding: 0 30px;
+}
+
+#result {
+    width: 20vw;
+    text-align: center;
+    background-color: #B6CDD3;
+    color: #A60022;
+}
