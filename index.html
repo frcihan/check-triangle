@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Triangle</title>
+</head>
+<body>
+
+    <input type="number" id="side1" value="3"><br>
+    <input type="number" id="side2" value="4"><br>
+    <input type="number" id="side3" value="5"><br>
+    <button type="submit" id="button" onclick="getTriangleType()">Check Triangle Type</button>
+
+    <p id="result" st></p>
+    
+    <script>
+        function getTriangleType() {
+            const a = parseInt(document.getElementById("side1").value);
+            const b = parseInt(document.getElementById("side2").value);
+            const c = parseInt(document.getElementById("side3").value);
+
+            let result;
+            if (a <= 0 || b <= 0 || c <= 0) {
+                result= "Please enter positive numbers"
+            } else if (a+b <= c || a+c <= b || b+c <= a) {
+                result = "This lines not to create triangle!"
+            } else if (a == b && b == c) {
+                result = 'equilateral';
+            } else if (a == b || a == c || b == c) {
+                result = 'isosceles';
+            } else {
+                result = 'scalene';
+            }
+            document.getElementById('result').innerHTML = result;
+        }
+    </script>
+</body>
+</html>
